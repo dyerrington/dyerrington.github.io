@@ -139,7 +139,7 @@
     <body>
     <div class="bg-video-wrap">
 
-        <video id="videobg" src="/lofi-stock-cityscape.mp4" type="video/mp4" loop muted autoplay>
+        <video id="videobg" src="/lofi-stock-cityscape.mp4" type="video/mp4" muted playsinline autoplay>
         </video>
         <div class="overlay"></div>
 
@@ -173,9 +173,9 @@
     <script>
         (function () {
 	// start video on mobile devices
-        var bgvideo = document.getElementById("videobg");
-        bgvideo.muted = true;
-        bgvideo.play();
+        // var bgvideo = document.getElementById("videobg");
+        // bgvideo.muted = true;
+        // bgvideo.play();
 
         const second = 1000,
                 minute = second * 60,
