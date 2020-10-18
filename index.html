@@ -135,7 +135,7 @@
     <body>
     <div class="bg-video-wrap">
 
-        <video src="/lofi-stock-cityscape.mp4" loop muted autoplay>
+        <video id="videobg" src="/lofi-stock-cityscape.mp4" loop muted autoplay>
         </video>
         <div class="overlay"></div>
 
@@ -170,6 +170,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data-10-year-range.js"></script>
     <script>
         (function () {
+	// start video on mobile devices
+        var bgvideo = document.getElementById("videobg");
+        bgvideo.muted = true;
+        bgvideo.play();
 
         const second = 1000,
                 minute = second * 60,
